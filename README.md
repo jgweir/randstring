@@ -7,7 +7,7 @@ Install
 =======
 
 ```bash
-go get -u gitlab.com/moonshotlabs/randstring
+go get -u github.com/jgweir/randstring
 ```
 
 Usage
