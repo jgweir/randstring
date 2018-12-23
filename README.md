@@ -1,7 +1,7 @@
-RandomStr
-=========
+randstring
+==========
 
-RandomStr is a Go library to generate random strings based on a set of criteria.
+randstring is a Go library to generate random strings based on a set of criteria.
 
 Install
 =======
