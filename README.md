@@ -64,24 +64,24 @@ Running Example
 package main
 
 import (
-	"fmt"
-	"gitlab.com/moonshotlabs/randstring"
+    "fmt"
+    "github.com/jgweir/randstring"
 )
 
 func main() {
 
-	posfix := []rune("@email.com")
+    posfix := []rune("@email.com")
 
-	rs := randstring.New(8)
+    rs := randstring.New(8)
     rs.Capitals(false)
     rs.Specials(false)
     rs.Digits(false)
-	rs.SetPosfix(posfix)
+    rs.SetPosfix(posfix)
 
-	for i := 0; i < 6; i++ {
-		str, _ := rs.Build()
-		fmt.Println(str)
-	}
+    for i := 0; i < 6; i++ {
+        str, _ := rs.Build()
+        fmt.Println(str)
+    }
 }
 
 // output
