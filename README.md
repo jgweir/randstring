@@ -16,14 +16,14 @@ Usage
 To generate a random string with 8 characters:
 
 ```golang
-rs := randomstr.New(8)
+rs := randstring.New(8)
 str, err := rs.Build()
 ```
 
 To generate a random string that only includes lowercase characters and special characters
 
 ```golang
-rs := randomstr.New(10)
+rs := randstring.New(10)
 rs.Capitals(false)
 rs.Digits(false)
 str, err := rs.Build()
@@ -34,7 +34,7 @@ To generate a random string with a prefix and posfix (note the total length of t
 ```golang
 prefix := []rune("user-")
 posfix := []rune("@email.com")
-rs := randomstr.New(6)
+rs := randstring.New(6)
 rs.Capitals(false)
 rs.Lowercase(true)
 rs.Digits(false)
@@ -51,7 +51,7 @@ To generate a random string with the swedish alphabet
 cchars := []rune("ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ")
 lchars := []rune("abcdefghijklmnopqrstuvwxyzåäö")
 
-rs := randomstr.New(6)
+rs := randstring.New(6)
 rs.SetCapitalChars(cchars)
 rs.SetLowercaseChars(lchars)
 str, err := rs.Build()
