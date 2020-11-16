@@ -143,19 +143,19 @@ func (r *RandomStr) buildAvailable() ([]rune, int) {
 	var all []rune
 	i := 0
 	if r.requireCapitals() {
-		all = append([]rune(r.CapitalChars))
+		all = append(all, []rune(r.CapitalChars)...)
 		i++
 	}
 	if r.requireLowercase() {
-		all = append([]rune(r.LowercaseChars))
+		all = append(all, []rune(r.LowercaseChars)...)
 		i++
 	}
 	if r.requireDigits() {
-		all = append([]rune(r.DigitChars))
+		all = append(all, []rune(r.DigitChars)...)
 		i++
 	}
 	if r.requireSpecialChars() {
-		all = append([]rune(r.SpecialChars))
+		all = append(all, []rune(r.SpecialChars)...)
 		i++
 	}
 	return all, i
